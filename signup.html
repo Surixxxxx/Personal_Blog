@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog website</title>
+    <!----- CUSTOM SHEET-->
+    <link rel="stylesheet" href="style.css">
+    <!-------Iconsss-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-------Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Montserrat:ital,wght@0,300;0,400;0,800;0,900;1,300;1,800&family=Nunito:wght@200&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="form__section">
+    <div class="container form__section-container">
+        <h2>Subscribe Here..!</h2>
+        
+        <form id="subscribeForm" enctype="multipart/form-data">
+            <input id="firstName" type="text" placeholder="First Name" required>
+            <input id="lastName" type="text" placeholder="Last Name" required>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="phoneNumber" type="text" placeholder=" Number" required>
+            <div class="form__control">
+                <textarea id="comments" cols="30" rows="10" placeholder="Add Your Comments..!" required></textarea>
+            </div>
+            <button type="button" class="btn" onclick="submitForm()">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
